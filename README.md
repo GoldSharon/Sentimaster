@@ -20,12 +20,13 @@ Welcome to **Sentimaster**, your go-to sentiment analysis tool. Sentimaster leve
 │ └── images<br>
 │     └── banner.jpg<br>
 └───templates<br>
-│ ├── index.html
-│ └── result.html
-├── app.py
-├── model.ipynb
-├── model.py
-└── requirements.txt
+│ ├── index.html<br>
+│ └── result.html<br>
+├── app.py<br>
+├── model.ipynb<br>
+├── model.py<br>
+└── requirements.txt<br>
+
 ## Installation
 1. **Clone the repository**:
     ```sh
