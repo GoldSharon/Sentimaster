@@ -31,7 +31,7 @@ Welcome to **Sentimaster**, your go-to sentiment analysis tool. Sentimaster leve
 1. **Clone the repository**:
     ```sh
     git clone https://github.com/GoldSharon/Sentimaster.git
-    cd SpamShield
+    cd Sentimaste
     ```
 
 2. **Set up a virtual environment**:
