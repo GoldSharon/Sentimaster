@@ -24,7 +24,6 @@ Welcome to **Sentimaster**, your go-to sentiment analysis tool. Sentimaster leve
 │ └── result.html<br>
 ├── app.py<br>
 ├── model.ipynb<br>
-├── model.py<br>
 └── requirements.txt<br>
 
 ## Installation
