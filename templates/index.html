@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimaster</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .banner-wrapper {
+            margin-left: -100px;
+            margin-right: -100px;
+        }
+        .banner {
+            height: 379px;
+            width: 100%;
+            background: url('/static/images/banner.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sentimaster</h1>
+        <h2 class="text-center">Welcome to Sentimaster!</h2>
+        <div class="banner"></div>
+        
+        <br>
+        <p>Tap into the pulse of public sentiment effortlessly with Sentimaster. Whether you're analyzing customer reviews, social media comments, or feedback surveys, our powerful sentiment analysis tool delivers actionable insights at your fingertips.</p>
+        <p><strong>Why choose Sentimaster?</strong></p>
+        <ul>
+            <li>Insightful Analysis: Gain deep insights into sentiment trends with precision and clarity.</li>
+            <li>Easy to Use: User-friendly interface makes sentiment analysis accessible to everyone.</li>
+            <li>Real-Time Feedback: Instantly analyze sentiment and respond swiftly to emerging trends.</li>
+            <li>Customizable Solutions: Tailor our tools to fit your unique needs and goals.</li>
+            <li>Secure and Reliable: Built on robust machine learning models, ensuring accurate predictions.</li>
+        </ul>
+        <p>Transform how you understand and engage with sentiment. Whether you're a business seeking to enhance customer satisfaction or an individual curious about public opinion, Sentimaster is your trusted companion.</p>
+        <p><strong>Explore Sentimaster today and harness the power of sentiment!</strong></p>
+        
+        <form action="/submit" method="post">
+            <h3>Enter the reviews inside this box</h3>
+            <div class="form-group">
+                <textarea id="Check" name="Check" class="form-control" placeholder="Paste your reviews here" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Check</button>
+        </form>
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
